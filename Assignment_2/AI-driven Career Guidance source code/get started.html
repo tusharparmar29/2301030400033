@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - AI Career Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">AI Career<span>Guide</span></div>
+        <nav>
+            <ul class="nav-links">
+                <a href="home.html">Home</a>
+                <li><a href="careerpaths.html">Career Paths</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faqs.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="signup">
+        <div class="signup-container">
+            <h2>Sign Up for Free</h2>
+            <p>Get access to personalized career guidance, resources, and more!</p>
+            <form action="submit-signup.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="cta-button">Create Account</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AI Career guidance. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,245 @@
+/* Dark Themed Desktop Header - Fixed Overflow */
+:root {
+    --bg-color: #121212;
+    --primary-color: #1e1e1e;
+    --text-color: #ffffff;
+    --accent-color: #00bcd4;
+    --hover-color: #0288d1;
+}
+
+/* GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding & borders don't affect width */
+}
+
+body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    font-family: 'Arial', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    width: 100vw; /* Ensures body never overflows */
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%; /* Uses % instead of fixed px to avoid overflow */
+    background: var(--primary-color);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100vw; /* Ensures header spans entire screen */
+    max-width: 100%; /* Prevents any overflow */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* LOGO */
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.logo span {
+    color: var(--text-color);
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Prevents content from exceeding screen width */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; /* Ensures nav doesn't overflow */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.nav-links a:hover {
+    color: var(--hover-color);
+}
+
+/* CTA BUTTON */
+.cta {
+    background: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    padding: 12px 24px;
+    margin-left: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s;
+    white-space: nowrap; /* Prevents button text from wrapping */
+}
+
+.cta:hover {
+    background: var(--hover-color);
+    transform: scale(1.05);
+}
+/* styles.css - Dark Themed Hero Section */
+:root {
+    --bg-color: #121212;
+    --primary-color: #1e1e1e;
+    --text-color: #ffffff;
+    --accent-color: #00bcd4;
+    --hover-color: #0288d1;
+}
+
+/* Ensure no horizontal scrolling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+.faq {
+    text-align: center;
+    padding: 115px 5%;
+    background: var(--primary-color);
+}
+
+.faq h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--accent-color);
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.faq-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.faq-question {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+.faq-answer {
+    font-size: 1rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+/* Footer Styles */
+.footer {
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 60px 5%;
+    text-align: center;
+    border-top: 2px solid var(--accent-color);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.footer-logo span {
+    color: var(--text-color);
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-right: 200px;
+    margin: 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    opacity: 0.8;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+.footer-social a {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #0288d1;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 30px; /* Adjust size */
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
